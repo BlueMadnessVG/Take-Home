@@ -38,6 +38,13 @@ class Validation extends BaseConfig
         'single' => 'CodeIgniter\Validation\Views\single',
     ];
 
+    /* VALIDATION FOR THE "HERO" CONTROLLER */
+    public array $hero = [
+        'name' => 'required|string|min_length[3]|max_length[255]',
+        'description' => 'string|min_length[3]|max_length[5000]',
+        'thumbnail_path' => 'required|string|min_length[3]|max_length[5000]',
+    ];
+
     // --------------------------------------------------------------------
     // Rules
     // --------------------------------------------------------------------

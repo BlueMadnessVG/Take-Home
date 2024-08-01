@@ -16,7 +16,7 @@ class Pages extends BaseController
         //CHECK: if page exist has a file in the directory
         if(! is_file(APPPATH.'Views/pages/'.$page.".php") ) {
             // ERROR: page do not exist
-            throw new PageNotFoundException($page); 
+            throw new PageNotFoundException($page);
         }
 
         // MAKE: first letter capital
